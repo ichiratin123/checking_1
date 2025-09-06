@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.title p:first-child{
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  color:#3bc4be;
+}
+
+.title p:last-of-type:not(:first-child){
+  color: #686868;
+}
+
+.title h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mxy{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* meet  */
+.meet__content{
+  margin-top: 20px;
+}
+
+.meet__content .meet__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50px 10px 50px 10px;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.meet__content .meet__item:hover{
+  border-color: #73BE48;
+}
+
+.meet__content .meet__item .meet_text{
+  padding-top: 20px;
+  position: relative;
+  left: -30px;
+}
+
+.meet__content .meet__item img{
+  border-radius: 50px 10px 50px 10px;
+  transition: all 0.5s ease;
+}
+
+.meet__content .meet__item:hover img{
+  border-radius: 10px 50px 10px 50px;
+}
+
+.meet__content .meet__item .meet_text h3{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.meet__content .meet__item .meet_text p{
+  color: #686868;
+}
+
+.meet__content .meet__item .meet_icon{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  left: -20px;
+  display: flex;
+  gap: 20px;
+}
+
+.meet__content .meet__item .meet_icon i{
+  background-color: #FFF0E5;
+  font-size: 16px;
+  border-radius: 12%;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.meet__content .meet__item .meet_icon i:hover{
+  color: white;
+  background-color: #ED145B;
+}
+
+/* student */
+/* .student__background{
+  padding-top: 100px;
+  background-color: #FFF0E5;
+}
+
+.student__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.student__right {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-auto-rows: 150px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.student__item1 p, .student__item2 p, .student__item3 p{
+  color: white;
+  font-weight: bold;
+   font-family: "Nunito", sans-serif;
+} */
+
+/* reponsive */
+@media screen and (width >= 40rem) {
+  .container {
+    max-width: 40rem;       
+  }
+}
+
+@media screen and (width >= 48rem) {
+  .container {
+    max-width: 48rem;
+  }
+}
+
+@media screen and (width >= 64rem) {
+  .container {
+    max-width: 64rem;
+  }
+}
